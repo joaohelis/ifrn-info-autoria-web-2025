@@ -6,22 +6,34 @@
     <title>Introdução a Tabelas</title>
 
     <style>
-
         body{
-            background-color: beige;
+            background-color: beige;                        
         }
+
+        /* td{
+            text-align: center;
+        } */
 
         h1, th{
             color: brown;
-        }
+        }        
         
         table, th, td{
             border: 1px black solid;
         }
 
-        table{
-            width: 400px;
+        .valor{
+            text-align: center;
         }
+
+        h1{
+            color: white;
+            background-color: black;
+        }
+
+        table{
+            width: 80%;
+        }                
     </style>
 
 </head>
@@ -34,37 +46,48 @@
             <th>Despesa</th>
             <th>Valor</th>
         </tr>
-        <tr>
-            <td>Janeiro</td>
+        <tr>            
+            <td rowspan="2">Janeiro</td>
             <td>Combustível</td>
-            <td>R$ 100,00</td>
-        </tr>
-        <tr>
-            <td>Janeiro</td>
-            <td>Alugel</td>
-            <td>R$ 500,00</td>
-        </tr>
-        <tr>
-            <td>Fevereiro</td>
-            <td>Alimentação</td>
-            <td>R$ 1200,00</td>
+            <td class="valor">R$ 100,00</td>
         </tr>
         <tr>            
-            <td>Fevereiro</td>
-            <td>Alimentação</td>
-            <td>R$ 1200,00</td>
+            <td>Alugel</td>
+            <td class="valor">R$ 500,00</td>
         </tr>
         <tr>
-            <td>Março</td>
+            <td rowspan="4">Fevereiro</td>
             <td>Alimentação</td>
-            <td>R$ 1200,00</td>
+            <td class="valor">R$ 1200,00</td>
+        </tr>
+        <tr>            
+            <!-- <td>Fevereiro</td> -->
+            <td>Alimentação</td>
+            <td class="valor">R$ 1200,00</td>
+        </tr>
+        <tr>            
+            <!-- <td>Fevereiro</td> -->
+            <td>Alimentação</td>
+            <td class="valor">R$ 1200,00</td>
+        </tr>
+        <tr>            
+            <!-- <td>Fevereiro</td> -->
+            <td>Alimentação</td>
+            <td class="valor">R$ 1200,00</td>
         </tr>
         <tr>
-            <td>Março</td>
+            <td rowspan="2">Março</td>            
             <td>Alimentação</td>
-            <td>R$ 1200,00</td>
+            <td class="valor">R$ 1200,00</td>
+        </tr>
+        <tr>
+            <!-- <td>Março</td> -->
+            <td>Alimentação</td>
+            <td class="valor">R$ 1200,00</td>
         </tr>
     </table>
+
+    <a target="_blank" href="https://www-w3schools-com.translate.goog/html/html_tables.asp?_x_tr_sl=en&_x_tr_tl=pt&_x_tr_hl=pt&_x_tr_pto=tc">Saiba mais sobre tabelas em HTML</a>
 
 </body>
 </html>
